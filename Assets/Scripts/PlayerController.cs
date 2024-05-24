@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerRb.AddForce(new Vector2(0,1), * 5 ForceMode2D.Impulse);
+            PlayerRb.AddForce(new Vector2(0,1) * 5, ForceMode2D.Impulse);
             Debug.Log("Space bar was pressed");
         }
     }
