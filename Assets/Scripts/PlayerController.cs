@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
+{   public float jumpforce = 5.0f;
     private Rigidbody2D PlayerRb;
     // Start is called before the first frame update
     void Start()
