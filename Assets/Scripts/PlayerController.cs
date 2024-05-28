@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {   public float jumpforce = 5.0f;
+
     private Rigidbody2D PlayerRb;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerRb.AddForce(new Vector2(0,1) * 5, ForceMode2D.Impulse);
+            PlayerRb.AddForce(new Vector2(0,1) * jumpforce, ForceMode2D.Impulse);
             Debug.Log("Space bar was pressed");
         }
     }
